@@ -25,6 +25,10 @@ https://connect.build/
 
 https://cobra.dev/
 
+### chi
+
+https://go-chi.io/#/
+
 ## setup
 
 ### Connect
@@ -35,3 +39,20 @@ https://connect.build/
 
 https://github.com/spf13/cobra-cli/blob/main/README.md
 
+```
+❯ go install github.com/spf13/cobra-cli@latest
+```
+
+### chi
+
+```
+❯ go get -u github.com/go-chi/chi/v5
+```
+
+## create
+
+### Command
+
+```
+❯ cobra-cli add server
+```
