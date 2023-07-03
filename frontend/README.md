@@ -45,6 +45,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 docker build -t nextjs-docker .
 ```
 
+run at local
+
 ```
 docker run -p 3000:3000 nextjs-docker
+```
+
+## deploy to Cloud Run
+
+```
+❯ gcloud run deploy bb1629be-frontend --source .
 ```
