@@ -38,3 +38,13 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## build image
+
+```
+docker build -t nextjs-docker .
+```
+
+```
+docker run -p 3000:3000 nextjs-docker
+```
