@@ -23,10 +23,10 @@ Python 3.9.6
 https://cloud.google.com/sdk/docs/install?hl=ja
 
 ```
-❯ gcloud version
-Google Cloud SDK 435.0.1
-bq 2.0.93
-core 2023.06.14
+❯ gcloud version                   
+Google Cloud SDK 444.0.0
+bq 2.0.97
+core 2023.08.22
 gcloud-crc32c 1.0.0
-gsutil 5.24
+gsutil 5.25
 ```
