@@ -17,6 +17,17 @@ resource "google_cloud_run_v2_service" "cloud_run" {
   }
 }
 
+resource "google_cloud_run_domain_mapping" "domain_mapping" {
+  location = var.region
+  name     = var.domain
+  metadata {
+    namespace = var.project_id
+  }
+  spec {
+    route_name = google_cloud_run_v2_service.cloud_run.name
+  }
+}
+
 data "google_iam_policy" "noauth" {
   binding {
     role = "roles/run.invoker"

@@ -44,3 +44,9 @@ variable "zone" {
     error_message = "The zone must be in asia-northeast1 region."
   }
 }
+
+variable "domain" {
+  description = "A domain for Cloud Run"
+  type        = string
+  default     = null
+}

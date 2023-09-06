@@ -15,3 +15,9 @@ variable "service_account" {
   type        = string
   default     = null
 }
+
+variable "domain" {
+  description = "A domain for Cloud Run"
+  type        = string
+  default     = null
+}

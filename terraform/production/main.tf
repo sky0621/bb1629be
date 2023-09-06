@@ -37,4 +37,5 @@ module "cloud_run" {
   project_id      = var.project_id
   region          = var.region
   service_account = module.service_account.cloud_run_sa_email
+  domain          = var.domain
 }
