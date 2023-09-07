@@ -50,3 +50,9 @@ variable "domain" {
   type        = string
   default     = null
 }
+
+variable "domains" {
+  description = "A domains for SSL Certification"
+  type        = list(string)
+  default     = null
+}

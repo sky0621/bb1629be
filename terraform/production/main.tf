@@ -39,3 +39,12 @@ module "cloud_run" {
   service_account = module.service_account.cloud_run_sa_email
   domain          = var.domain
 }
+
+module "load_balancer" {
+  source = "../modules/load_balancer"
+
+  project_id              = var.project_id
+  region                  = var.region
+  domains                 = var.domains
+  cloud_run_instance_name = module.cloud_run.cloud_run_instance_name
+}
