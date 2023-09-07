@@ -45,12 +45,6 @@ variable "zone" {
   }
 }
 
-variable "domain" {
-  description = "A domain for Cloud Run"
-  type        = string
-  default     = null
-}
-
 variable "domains" {
   description = "A domains for SSL Certification"
   type        = list(string)
